@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Test {
+        private static Scanner sc = new Scanner(System.in);
+        private static String name;
+        private static int age;
+        private static String address;
+
+        public static void main(String[] args) {
+                try {
+                        System.out.println("plz enter your name:");
+                        name = sc.next();
+                        System.out.println("plz enter your age");
+                        age = sc.nextInt();
+                        System.out.println("plz enter address");
+                        address = sc.next();
+
+                        System.out.println("Hi Mr/Ms :" + name + "\nyour age=" + age + "\nyou are from=" + address);
+                } catch (Exception e) {
+                        e.printStackTrace();
+                }
+                System.out.println("exit Bye!");
+        }
+
+}
